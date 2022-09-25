@@ -1,1 +1,41 @@
 @forward "globals";
+@forward "utils";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25em;
+
+  &__logo {
+    margin-left: 1em;
+  }
+
+  &__responsive-menu-button,
+  &__cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__left-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cart-button {
+    margin-right: 1.375em;
+  }
+
+  &__user-avatar img {
+    width: 100%;
+    max-width: 24px;
+    height: 24px;
+  }
+}
